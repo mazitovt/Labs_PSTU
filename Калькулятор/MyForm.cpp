@@ -1,6 +1,7 @@
-//Вариант 17(14). Интервалы  времени (задаются в часах, минутах, секундах).
-//Ввод данных, ввод только в часах, минутах или секундах, нахождение величины временного интервала, суммы,
-//разности, преобразование интервала в часы, минуты, секунды.
+// Р“Р РЈРџРџРђ: Р РРЎ-19-1Р±
+// Р¤РРћ: РњРђР—РРўРћР’ РўРРњРЈР  Р­РњРР›Р•Р’РР§
+// Р’РђР РРђРќРў 17.
+// РўР’РћР Р§Р•РЎРљРћР• Р—РђР”РђРќРР• Р§РђРЎРўР¬ 2: Р РђР—Р РђР‘РћРўРљРђ РљРђР›Р¬РљРЈР›РЇРўРћР Рђ
 
 #include "MyForm.h"
 
@@ -12,7 +13,7 @@ using namespace System::Windows::Forms;
 void main(array<String^>^ arg) {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
-    Project1::MyForm form; //WinFormsTest - имя вашего проекта
+    Project1::MyForm form; //WinFormsTest - ГЁГ¬Гї ГўГ ГёГҐГЈГ® ГЇГ°Г®ГҐГЄГІГ 
     Application::Run(% form);
 }
 
