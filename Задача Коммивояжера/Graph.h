@@ -1,7 +1,7 @@
-// ГРУППА: РИС-19-1б
-// ФИО: МАЗИТОВ ТИМУР ЭМИЛЕВИЧ
-// ВАРИАНТ 17.
-// ТВОРЧЕСКОЕ ЗАДАНИЕ ЧАСТЬ 1:ЗАДАЧА КОММИВОЯЖЕРА
+// Р“Р РЈРџРџРђ: Р РРЎ-19-1Р±
+// Р¤РРћ: РњРђР—РРўРћР’ РўРРњРЈР  Р­РњРР›Р•Р’РР§
+// Р’РђР РРђРќРў 17.
+// РўР’РћР Р§Р•РЎРљРћР• Р—РђР”РђРќРР• Р§РђРЎРўР¬ 1:Р—РђР”РђР§Рђ РљРћРњРњРР’РћРЇР–Р•Р Рђ
 
 #pragma once
 #include <vector>
@@ -65,12 +65,12 @@ public:
 	vector<T> GetNbrs(const T& vertex);
 	void DrawGraph();
 
-	// ОБРАБОТКА ДЕЙСТВИЙ МЫШИ
+	// ГЋГЃГђГЂГЃГЋГ’ГЉГЂ Г„Г…Г‰Г‘Г’Г‚Г€Г‰ ГЊГ›ГГ€
 	void find(int, int);
 	void move(int, int);
 	
 
-	// ЗАДАЧА КОММИВОЯЖЕРА
+	// Г‡ГЂГ„ГЂГ—ГЂ ГЉГЋГЊГЊГ€Г‚ГЋГџГ†Г…ГђГЂ
 	bool hamilton(int);
 	int zero_mark(int i, int j);
 	int COM_rows_columns(T**);	
@@ -80,15 +80,15 @@ public:
 
 template<class T>
 vector<T> Graph<T>::GetNbrs(const T& vertex) {
-	vector<T> nbrsList; // создание списка соседей
-	int pos = this->GetVertPos(vertex); /* вычисление позиции vertex в матрице смежности */
-	if (pos != (-1)) { /* проверка, что vertex есть в матрице смежности */
+	vector<T> nbrsList; // Г±Г®Г§Г¤Г Г­ГЁГҐ Г±ГЇГЁГ±ГЄГ  Г±Г®Г±ГҐГ¤ГҐГ©
+	int pos = this->GetVertPos(vertex); /* ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГҐ ГЇГ®Г§ГЁГ¶ГЁГЁ vertex Гў Г¬Г ГІГ°ГЁГ¶ГҐ Г±Г¬ГҐГ¦Г­Г®Г±ГІГЁ */
+	if (pos != (-1)) { /* ГЇГ°Г®ГўГҐГ°ГЄГ , Г·ГІГ® vertex ГҐГ±ГІГј Гў Г¬Г ГІГ°ГЁГ¶ГҐ Г±Г¬ГҐГ¦Г­Г®Г±ГІГЁ */
 		for (int i = 0, vertListSize = this->vertList.size(); i < vertListSize; ++i) {
-			if (this->adjMatrix[pos][i] != 0) /* вычисление соседей*/
-				nbrsList.push_back(this->vertList[i]); /* запись соседей в вектор */
+			if (this->adjMatrix[pos][i] != 0) /* ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГҐ Г±Г®Г±ГҐГ¤ГҐГ©*/
+				nbrsList.push_back(this->vertList[i]); /* Г§Г ГЇГЁГ±Гј Г±Г®Г±ГҐГ¤ГҐГ© Гў ГўГҐГЄГІГ®Г° */
 		}
 	}
-	return nbrsList; // возврат списка соседей
+	return nbrsList; // ГўГ®Г§ГўГ°Г ГІ Г±ГЇГЁГ±ГЄГ  Г±Г®Г±ГҐГ¤ГҐГ©
 }
 
 template<class T>
@@ -150,18 +150,18 @@ int Graph<T>::GetAmountVerts() {
 
 template<class T>
 int Graph<T>::GetAmountEdges() {
-	int amount = 0; // обнуляем счетчик
-	if (!this->IsEmpty()) { // проверяем, что граф не пуст
+	int amount = 0; // Г®ГЎГ­ГіГ«ГїГҐГ¬ Г±Г·ГҐГІГ·ГЁГЄ
+	if (!this->IsEmpty()) { // ГЇГ°Г®ГўГҐГ°ГїГҐГ¬, Г·ГІГ® ГЈГ°Г Гґ Г­ГҐ ГЇГіГ±ГІ
 		for (int i = 0, vertListSize = this->vertList.size(); i < vertListSize; ++i) {
 			for (int j = 0; j < vertListSize; ++j) {
-				if (this->adjMatrix[i][j] == 1) // находим рёбра
-					amount += 1; // считаем количество рёбер
+				if (this->adjMatrix[i][j] == 1) // Г­Г ГµГ®Г¤ГЁГ¬ Г°ВёГЎГ°Г 
+					amount += 1; // Г±Г·ГЁГІГ ГҐГ¬ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г°ВёГЎГҐГ°
 			}
 		}
-		return amount; // возвращаем количество рёбер
+		return amount; // ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г°ВёГЎГҐГ°
 	}
 	else
-		return 0; // если граф пуст, возвращаем 0
+		return 0; // ГҐГ±Г«ГЁ ГЈГ°Г Гґ ГЇГіГ±ГІ, ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬ 0
 }
 
 template<class T>
@@ -180,7 +180,7 @@ void Graph<T>::InsertVertex(const T& vertex) {
 		this->vertList.push_back(vertex);
 	}
 	else {
-		cout << "Граф уже заполнен. Невозможно добавить новую вершину " << endl;
+		cout << "ГѓГ°Г Гґ ГіГ¦ГҐ Г§Г ГЇГ®Г«Г­ГҐГ­. ГЌГҐГўГ®Г§Г¬Г®Г¦Г­Г® Г¤Г®ГЎГ ГўГЁГІГј Г­Г®ГўГіГѕ ГўГҐГ°ГёГЁГ­Гі " << endl;
 		return;
 	}
 }
@@ -191,7 +191,7 @@ void Graph<T>::InsertEdge(const T& vertex1, const T& vertex2, int weight) {
 		int vertPos1 = GetVertPos(vertex1);
 		int vertPos2 = GetVertPos(vertex2);
 		if (this->adjMatrix[vertPos1][vertPos2] != 0) {
-			cout << "Ребро между этими вершинами уже существует" << endl;
+			cout << "ГђГҐГЎГ°Г® Г¬ГҐГ¦Г¤Гі ГЅГІГЁГ¬ГЁ ГўГҐГ°ГёГЁГ­Г Г¬ГЁ ГіГ¦ГҐ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ" << endl;
 			return;
 		}
 		else {
@@ -199,7 +199,7 @@ void Graph<T>::InsertEdge(const T& vertex1, const T& vertex2, int weight) {
 		}
 	}
 	else {
-		cout << "Обеих вершин (или одной из них) нет в графе " << endl;
+		cout << "ГЋГЎГҐГЁГµ ГўГҐГ°ГёГЁГ­ (ГЁГ«ГЁ Г®Г¤Г­Г®Г© ГЁГ§ Г­ГЁГµ) Г­ГҐГІ Гў ГЈГ°Г ГґГҐ " << endl;
 		return;
 	}
 }
@@ -207,7 +207,7 @@ void Graph<T>::InsertEdge(const T& vertex1, const T& vertex2, int weight) {
 template<class T>
 void Graph<T>::Print() {
 	if (!this->IsEmpty()) {
-		cout << "Матрица смежности графа: " << endl;
+		cout << "ГЊГ ГІГ°ГЁГ¶Г  Г±Г¬ГҐГ¦Г­Г®Г±ГІГЁ ГЈГ°Г ГґГ : " << endl;
 		for (int i = 0, vertListSize = this->vertList.size(); i < vertListSize; ++i) {
 
 			cout << (this->vertList[i]) << " ";
@@ -218,7 +218,7 @@ void Graph<T>::Print() {
 		}
 	}
 	else {
-		cout << "Граф пуст " << endl;
+		cout << "ГѓГ°Г Гґ ГЇГіГ±ГІ " << endl;
 	}
 }
 
@@ -242,7 +242,7 @@ void setCoord(int i, int n)
 	vertC[i].y = y1;
 }
 
-void drawCircle(int x, int y, int R_, bool flag2, float r,float g, float b) //рисуем круг в заданных координатах
+void drawCircle(int x, int y, int R_, bool flag2, float r,float g, float b) //Г°ГЁГ±ГіГҐГ¬ ГЄГ°ГіГЈ Гў Г§Г Г¤Г Г­Г­Г»Гµ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ Гµ
 {
 
 	if (flag2) glColor3ub(r, g, b);
@@ -297,7 +297,7 @@ void Graph<T>::drawVertex(int n)
 	}
 }
 
-void drawLine(int text, int x0, int y0, int x1, int y1) //ребро ориентированный взвешенный граф
+void drawLine(int text, int x0, int y0, int x1, int y1) //Г°ГҐГЎГ°Г® Г®Г°ГЁГҐГ­ГІГЁГ°Г®ГўГ Г­Г­Г»Г© ГўГ§ГўГҐГёГҐГ­Г­Г»Г© ГЈГ°Г Гґ
 {
 	glColor3i(0, 0, 0);
 	glBegin(GL_LINES);
@@ -323,7 +323,7 @@ void drawLine(int text, int x0, int y0, int x1, int y1) //ребро ориентированный 
 }
 
 
-// РИСУЕТ ТРЕУГОЛЬНИК ПО НАПРАВЛЕНИЮ ВЕТВИ
+// ГђГ€Г‘Г“Г…Г’ Г’ГђГ…Г“ГѓГЋГ‹ГњГЌГ€ГЉ ГЏГЋ ГЌГЂГЏГђГЂГ‚Г‹Г…ГЌГ€Гћ Г‚Г…Г’Г‚Г€
 void drawTR(double tr_x, double tr_y, double x1, double y1, int red, int green, int blue) {
 	glColor3ub(red, green, blue);
 	glBegin(GL_TRIANGLES);
@@ -365,7 +365,7 @@ void drawTR(double tr_x, double tr_y, double x1, double y1, int red, int green, 
 }
 
 
-// РИСУЕТ ПОЛОВИНУ ОВАЛА ПО ДВУМ КООРДИНАТАМ
+// ГђГ€Г‘Г“Г…Г’ ГЏГЋГ‹ГЋГ‚Г€ГЌГ“ ГЋГ‚ГЂГ‹ГЂ ГЏГЋ Г„Г‚Г“ГЊ ГЉГЋГЋГђГ„Г€ГЌГЂГ’ГЂГЊ
 void drawHalfEllipse(
 	int text, int x0, int y0, int x1, int y1, int red, int green, int blue, bool flag
 ) 
@@ -468,7 +468,7 @@ void Graph<T>::find(int _x, int _y) {
 		if (_x <= vertC[i].x + R && _x >= vertC[i].x - R && _y <= vertC[i].y + R && _y >= vertC[i].y - R) {
 			sel.x = vertC[i].x;
 			sel.y = vertC[i].y;
-			//cout << "\nВыбран узел номер " << i+1 << endl;
+			//cout << "\nГ‚Г»ГЎГ°Г Г­ ГіГ§ГҐГ« Г­Г®Г¬ГҐГ° " << i+1 << endl;
 			int x = i + 1;
 			FillLabels(x);
 			D_method(x);
@@ -483,7 +483,7 @@ void Graph<T>::move(int _x, int _y) {
 	for (int i = 0; i < vertList.size(); i++) {
 		if (_x <= vertC[i].x + R && _x >= vertC[i].x - R && _y <= vertC[i].y + R && _y >= vertC[i].y - R) {
 			
-			//cout << "\nВыбран узел номер " << i + 1 << endl;
+			//cout << "\nГ‚Г»ГЎГ°Г Г­ ГіГ§ГҐГ« Г­Г®Г¬ГҐГ° " << i + 1 << endl;
 			for (int j = 0; j < vertList.size(); j++) {
 				if (j != i) {
 					if (x1 <= vertC[j].x + R && x1 >= vertC[j].x - R && y1 <= vertC[j].y + R && y1 >= vertC[j].y - R) flag = false;
@@ -523,13 +523,13 @@ template <class T>
 bool Graph<T>::AllVisited(int* vV)
 {
 
-	bool flag = true; //Изначально считается, что все вершины обработаны 
+	bool flag = true; //Г€Г§Г­Г Г·Г Г«ГјГ­Г® Г±Г·ГЁГІГ ГҐГІГ±Гї, Г·ГІГ® ГўГ±ГҐ ГўГҐГ°ГёГЁГ­Г» Г®ГЎГ°Г ГЎГ®ГІГ Г­Г» 
 
 	for (int i = 0; i < vertList.size(); i++) {
 		if (vV[i] != 1) flag = false;
-	} //Если есть хотя бы одна необработанная вершина - флаг принимает значение 	 //Если есть хотя бы одна необработанная вершина - флаг принимает значение 
+	} //Г…Г±Г«ГЁ ГҐГ±ГІГј ГµГ®ГІГї ГЎГ» Г®Г¤Г­Г  Г­ГҐГ®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г Гї ГўГҐГ°ГёГЁГ­Г  - ГґГ«Г ГЈ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГІ Г§Г­Г Г·ГҐГ­ГЁГҐ 	 //Г…Г±Г«ГЁ ГҐГ±ГІГј ГµГ®ГІГї ГЎГ» Г®Г¤Г­Г  Г­ГҐГ®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г Гї ГўГҐГ°ГёГЁГ­Г  - ГґГ«Г ГЈ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГІ Г§Г­Г Г·ГҐГ­ГЁГҐ 
 	
-	return flag; //Возвращается значение флага: true если все обработаны, false в ином случае
+	return flag; //Г‚Г®Г§ГўГ°Г Г№Г ГҐГІГ±Гї Г§Г­Г Г·ГҐГ­ГЁГҐ ГґГ«Г ГЈГ : true ГҐГ±Г«ГЁ ГўГ±ГҐ Г®ГЎГ°Г ГЎГ®ГІГ Г­Г», false Гў ГЁГ­Г®Г¬ Г±Г«ГіГ·Г ГҐ
 }
 
 template <class T>
@@ -546,61 +546,61 @@ int Graph<T>::D_method(T& startVertex) {
 		}
 	}
 
-	T curSrc; //Объявление опорной вершины абстрактного типа Т 
-	int counter = 0; //Счетчик обработанных меток
-	int minLabel = 1000000; //Переменная для хранения минимальной метки
-	vector<T> neighbors = GetNbrs(startVertex); //Вектор из соседей текущей обрабатываемой вершины 
+	T curSrc; //ГЋГЎГєГїГўГ«ГҐГ­ГЁГҐ Г®ГЇГ®Г°Г­Г®Г© ГўГҐГ°ГёГЁГ­Г» Г ГЎГ±ГІГ°Г ГЄГІГ­Г®ГЈГ® ГІГЁГЇГ  Г’ 
+	int counter = 0; //Г‘Г·ГҐГІГ·ГЁГЄ Г®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г»Гµ Г¬ГҐГІГ®ГЄ
+	int minLabel = 1000000; //ГЏГҐГ°ГҐГ¬ГҐГ­Г­Г Гї Г¤Г«Гї ГµГ°Г Г­ГҐГ­ГЁГї Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®Г© Г¬ГҐГІГЄГЁ
+	vector<T> neighbors = GetNbrs(startVertex); //Г‚ГҐГЄГІГ®Г° ГЁГ§ Г±Г®Г±ГҐГ¤ГҐГ© ГІГҐГЄГіГ№ГҐГ© Г®ГЎГ°Г ГЎГ ГІГ»ГўГ ГҐГ¬Г®Г© ГўГҐГ°ГёГЁГ­Г» 
 	for (int i = 0; i < neighbors.size(); ++i)
 	{
-		int startLabel = labelList[GetVertPos(startVertex)]; //метка текущей вершины 
-		int weight = GetWeight(startVertex, neighbors[i]); //вес ребра до соседней вершины 
-		int nIndex = GetVertPos(neighbors[i]); //индекс соседней вершины 
-		int nextLabel = labelList[nIndex]; //метка соседней вершины
-		if (startLabel + weight < nextLabel) //Если значение суммы текущей метки и веса ребра меньше значения соседней метки 
-			labelList[nIndex] = startLabel + weight; //Обновление соседней метки 
+		int startLabel = labelList[GetVertPos(startVertex)]; //Г¬ГҐГІГЄГ  ГІГҐГЄГіГ№ГҐГ© ГўГҐГ°ГёГЁГ­Г» 
+		int weight = GetWeight(startVertex, neighbors[i]); //ГўГҐГ± Г°ГҐГЎГ°Г  Г¤Г® Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г» 
+		int nIndex = GetVertPos(neighbors[i]); //ГЁГ­Г¤ГҐГЄГ± Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г» 
+		int nextLabel = labelList[nIndex]; //Г¬ГҐГІГЄГ  Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г»
+		if (startLabel + weight < nextLabel) //Г…Г±Г«ГЁ Г§Г­Г Г·ГҐГ­ГЁГҐ Г±ГіГ¬Г¬Г» ГІГҐГЄГіГ№ГҐГ© Г¬ГҐГІГЄГЁ ГЁ ГўГҐГ±Г  Г°ГҐГЎГ°Г  Г¬ГҐГ­ГјГёГҐ Г§Г­Г Г·ГҐГ­ГЁГї Г±Г®Г±ГҐГ¤Г­ГҐГ© Г¬ГҐГІГЄГЁ 
+			labelList[nIndex] = startLabel + weight; //ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г±Г®Г±ГҐГ¤Г­ГҐГ© Г¬ГҐГІГЄГЁ 
 		if (labelList[nIndex] < minLabel)
-			minLabel = labelList[nIndex]; //Определение наименьшей метки у соседних вершин
+			minLabel = labelList[nIndex]; //ГЋГЇГ°ГҐГ¤ГҐГ«ГҐГ­ГЁГҐ Г­Г ГЁГ¬ГҐГ­ГјГёГҐГ© Г¬ГҐГІГЄГЁ Гі Г±Г®Г±ГҐГ¤Г­ГЁГµ ГўГҐГ°ГёГЁГ­
 	}
-	for (int i = 0; i < neighbors.size(); ++i) //Все ли соседние вершины проверены 
+	for (int i = 0; i < neighbors.size(); ++i) //Г‚Г±ГҐ Г«ГЁ Г±Г®Г±ГҐГ¤Г­ГЁГҐ ГўГҐГ°ГёГЁГ­Г» ГЇГ°Г®ГўГҐГ°ГҐГ­Г» 
 		if (labelList[GetVertPos(neighbors[i])] != 1000000)
 			counter += 1;
 
-	if (counter == neighbors.size()) //Текущая вершина помечается обработанной 
+	if (counter == neighbors.size()) //Г’ГҐГЄГіГ№Г Гї ГўГҐГ°ГёГЁГ­Г  ГЇГ®Г¬ГҐГ·Г ГҐГІГ±Гї Г®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г®Г© 
 	{
 		visitedVerts[GetVertPos(startVertex)] = 1;
 	}
-	for (int i = 0; i < neighbors.size(); ++i) //Поиск новой опорной вершины с наименьшей меткой 
+	for (int i = 0; i < neighbors.size(); ++i) //ГЏГ®ГЁГ±ГЄ Г­Г®ГўГ®Г© Г®ГЇГ®Г°Г­Г®Г© ГўГҐГ°ГёГЁГ­Г» Г± Г­Г ГЁГ¬ГҐГ­ГјГёГҐГ© Г¬ГҐГІГЄГ®Г© 
 		if (labelList[GetVertPos(neighbors[i])] == minLabel) 
 			curSrc = neighbors[i];
 
-	while (!AllVisited(visitedVerts)) //Пока все вершины не обработаны
+	while (!AllVisited(visitedVerts)) //ГЏГ®ГЄГ  ГўГ±ГҐ ГўГҐГ°ГёГЁГ­Г» Г­ГҐ Г®ГЎГ°Г ГЎГ®ГІГ Г­Г»
 	{
 		
-		neighbors = GetNbrs(curSrc); //Вектор соседей новой опорной вершины 
+		neighbors = GetNbrs(curSrc); //Г‚ГҐГЄГІГ®Г° Г±Г®Г±ГҐГ¤ГҐГ© Г­Г®ГўГ®Г© Г®ГЇГ®Г°Г­Г®Г© ГўГҐГ°ГёГЁГ­Г» 
 		int count = 0;
 		minLabel = 1000000;
-		for (int i = 0; i < neighbors.size(); i++) //Обход соседних вершин
+		for (int i = 0; i < neighbors.size(); i++) //ГЋГЎГµГ®Г¤ Г±Г®Г±ГҐГ¤Г­ГЁГµ ГўГҐГ°ГёГЁГ­
 		{
-			int curLabel = labelList[GetVertPos(curSrc)]; //Метка текущей опорной вершины 
-			int weight = GetWeight(curSrc, neighbors[i]); //Вес ребра до соседней вершины 
-			int nIndex = GetVertPos(neighbors[i]); //Индекс соседней вершины 
-			int nextLabel = labelList[nIndex]; //Метка соседней
+			int curLabel = labelList[GetVertPos(curSrc)]; //ГЊГҐГІГЄГ  ГІГҐГЄГіГ№ГҐГ© Г®ГЇГ®Г°Г­Г®Г© ГўГҐГ°ГёГЁГ­Г» 
+			int weight = GetWeight(curSrc, neighbors[i]); //Г‚ГҐГ± Г°ГҐГЎГ°Г  Г¤Г® Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г» 
+			int nIndex = GetVertPos(neighbors[i]); //Г€Г­Г¤ГҐГЄГ± Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г» 
+			int nextLabel = labelList[nIndex]; //ГЊГҐГІГЄГ  Г±Г®Г±ГҐГ¤Г­ГҐГ©
 
-			if ((curLabel + weight) < nextLabel) //Если значение суммы текущей метки и веса ребра меньше значения соседней метки 
-				labelList[nIndex] = curLabel + weight; //Метка соседней вершины обновляется
+			if ((curLabel + weight) < nextLabel) //Г…Г±Г«ГЁ Г§Г­Г Г·ГҐГ­ГЁГҐ Г±ГіГ¬Г¬Г» ГІГҐГЄГіГ№ГҐГ© Г¬ГҐГІГЄГЁ ГЁ ГўГҐГ±Г  Г°ГҐГЎГ°Г  Г¬ГҐГ­ГјГёГҐ Г§Г­Г Г·ГҐГ­ГЁГї Г±Г®Г±ГҐГ¤Г­ГҐГ© Г¬ГҐГІГЄГЁ 
+				labelList[nIndex] = curLabel + weight; //ГЊГҐГІГЄГ  Г±Г®Г±ГҐГ¤Г­ГҐГ© ГўГҐГ°ГёГЁГ­Г» Г®ГЎГ­Г®ГўГ«ГїГҐГІГ±Гї
 
-			if (labelList[nIndex] < minLabel && visitedVerts[nIndex] != 1) //Поиск минимальной метки среди не обработанных 
+			if (labelList[nIndex] < minLabel && visitedVerts[nIndex] != 1) //ГЏГ®ГЁГ±ГЄ Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®Г© Г¬ГҐГІГЄГЁ Г±Г°ГҐГ¤ГЁ Г­ГҐ Г®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г»Гµ 
 				minLabel = labelList[nIndex];
 
-			count += 1; //Подсчёт посещённых соседей
+			count += 1; //ГЏГ®Г¤Г±Г·ВёГІ ГЇГ®Г±ГҐГ№ВёГ­Г­Г»Гµ Г±Г®Г±ГҐГ¤ГҐГ©
 		}
-		if (count == neighbors.size()) //Если все соседи посещены 
+		if (count == neighbors.size()) //Г…Г±Г«ГЁ ГўГ±ГҐ Г±Г®Г±ГҐГ¤ГЁ ГЇГ®Г±ГҐГ№ГҐГ­Г» 
 		{
 			visitedVerts[GetVertPos(curSrc)] = 1;
-		} //Опорная вершина помечается обработанной
+		} //ГЋГЇГ®Г°Г­Г Гї ГўГҐГ°ГёГЁГ­Г  ГЇГ®Г¬ГҐГ·Г ГҐГІГ±Гї Г®ГЎГ°Г ГЎГ®ГІГ Г­Г­Г®Г©
 
 		bool flag = false;
-		for (int i = 0; i < neighbors.size(); ++i) { //Поиск новой опорной вершины 
+		for (int i = 0; i < neighbors.size(); ++i) { //ГЏГ®ГЁГ±ГЄ Г­Г®ГўГ®Г© Г®ГЇГ®Г°Г­Г®Г© ГўГҐГ°ГёГЁГ­Г» 
 			if (labelList[GetVertPos(neighbors[i])] == minLabel || visitedVerts[GetVertPos(neighbors[i])] != 1) {
 				flag = true;
 				curSrc = neighbors[i];
@@ -621,23 +621,23 @@ int Graph<T>::D_method(T& startVertex) {
 	for (int i = 0; i < GetVertPos(startVertex); ++i)
 	{
 		infotext[i] = labelList[GetVertPos(vertList[i])];
-		cout << "Кратчайшее расстояние от вершины " << startVertex << " до вершины " << vertList[i] << " равно "
+		cout << "ГЉГ°Г ГІГ·Г Г©ГёГҐГҐ Г°Г Г±Г±ГІГ®ГїГ­ГЁГҐ Г®ГІ ГўГҐГ°ГёГЁГ­Г» " << startVertex << " Г¤Г® ГўГҐГ°ГёГЁГ­Г» " << vertList[i] << " Г°Г ГўГ­Г® "
 			<< labelList[GetVertPos(vertList[i])] << endl;
 
 	}
 	for (int i = GetVertPos(startVertex) + 1; i < vertList.size(); ++i)
 	{
 		infotext[i] = labelList[GetVertPos(vertList[i])];
-		cout << "Кратчайшее расстояние от вершины " << startVertex << " до вершины " << vertList[i] << " равно "
+		cout << "ГЉГ°Г ГІГ·Г Г©ГёГҐГҐ Г°Г Г±Г±ГІГ®ГїГ­ГЁГҐ Г®ГІ ГўГҐГ°ГёГЁГ­Г» " << startVertex << " Г¤Г® ГўГҐГ°ГёГЁГ­Г» " << vertList[i] << " Г°Г ГўГ­Г® "
 			<< labelList[GetVertPos(vertList[i])] << endl;
 	}
 
 }
 
 
-// ЗАДАЧА КОММИВОЯЖЕРА
+// Г‡ГЂГ„ГЂГ—ГЂ ГЉГЋГЊГЊГ€Г‚ГЋГџГ†Г…ГђГЂ
 
-// ПРОВЕРКА НА ЦИКЛЫ ГАМИЛЬТОНА
+// ГЏГђГЋГ‚Г…ГђГЉГЂ ГЌГЂ Г–Г€ГЉГ‹Г› ГѓГЂГЊГ€Г‹ГњГ’ГЋГЌГЂ
 template <class T>
 bool Graph<T>::hamilton(int curr)
 {	
@@ -661,12 +661,12 @@ bool Graph<T>::hamilton(int curr)
 	return false;
 }
 
-// ПЕЧАТЬ ТЕКУЩЕЙ МАТРИЦЫ В КОНСОЛЬ
+// ГЏГ…Г—ГЂГ’Гњ Г’Г…ГЉГ“Г™Г…Г‰ ГЊГЂГ’ГђГ€Г–Г› Г‚ ГЉГЋГЌГ‘ГЋГ‹Гњ
 template<class T>
 void Graph<T>::temp_COM_Print() {
 	cout << endl;
 	if (!this->IsEmpty()) {
-		cout << "Матрица смежности графа: " << endl;
+		cout << "ГЊГ ГІГ°ГЁГ¶Г  Г±Г¬ГҐГ¦Г­Г®Г±ГІГЁ ГЈГ°Г ГґГ : " << endl;
 		for (int i = 0, vertListSize = this->vertList.size(); i < vertListSize; ++i) {
 
 			cout << (this->vertList[i]) << " ";
@@ -677,11 +677,11 @@ void Graph<T>::temp_COM_Print() {
 		}
 	}
 	else {
-		cout << "Граф пуст " << endl;
+		cout << "ГѓГ°Г Гґ ГЇГіГ±ГІ " << endl;
 	}
 }
 
-// ПРОВЕРКА МАТРИЦЫ НА НАЛИЧИЕ В НЕЙ ЭЛЕМЕНТОВ, ОТЛИЧНЫХ ОТ -1
+// ГЏГђГЋГ‚Г…ГђГЉГЂ ГЊГЂГ’ГђГ€Г–Г› ГЌГЂ ГЌГЂГ‹Г€Г—Г€Г… Г‚ ГЌГ…Г‰ ГќГ‹Г…ГЊГ…ГЌГ’ГЋГ‚, ГЋГ’Г‹Г€Г—ГЌГ›Г• ГЋГ’ -1
 bool IS_INF(int** matrix, int SIZE) {
 	bool f  = true;
 	for (int i = 0; i < SIZE; ++i) {
@@ -692,7 +692,7 @@ bool IS_INF(int** matrix, int SIZE) {
 	return f;
 }
 
-// РЕДУКЦИЯ СТРОК И СТОЛБЦОВ (ВЫЧИТАНИЕ МИНИМАЛНЫХ ЭЛЕМЕНТОВ)
+// ГђГ…Г„Г“ГЉГ–Г€Гџ Г‘Г’ГђГЋГЉ Г€ Г‘Г’ГЋГ‹ГЃГ–ГЋГ‚ (Г‚Г›Г—Г€Г’ГЂГЌГ€Г… ГЊГ€ГЌГ€ГЊГЂГ‹ГЌГ›Г• ГќГ‹Г…ГЊГ…ГЌГ’ГЋГ‚)
 template <class T>
 int Graph<T>::COM_rows_columns(T** matrix) {
 
@@ -748,7 +748,7 @@ int Graph<T>::COM_rows_columns(T** matrix) {
 	return MINROAD;
 }
 
-// ПОДСЧЕТ ШТРАФОВ НУЛЯ
+// ГЏГЋГ„Г‘Г—Г…Г’ ГГ’ГђГЂГ”ГЋГ‚ ГЌГ“Г‹Гџ
 template <class T>
 int Graph<T>::zero_mark(int i, int j) {
 	int min_i = 0, min_j = 0, zero_mark;
@@ -794,7 +794,7 @@ int Graph<T>::zero_mark(int i, int j) {
 	return min_i + min_j;
 }
 
-// РЕШЕНИЕ ЗАДАЧИ КОММИВОЯЖЕРА
+// ГђГ…ГГ…ГЌГ€Г… Г‡ГЂГ„ГЂГ—Г€ ГЉГЋГЊГЊГ€Г‚ГЋГџГ†Г…ГђГЂ
 template <class T>
 int Graph<T>::Commute_problem() {
 
@@ -834,7 +834,7 @@ int Graph<T>::Commute_problem() {
 		while (m < SIZE)
 		{
 			//cout << "yes";
-	// ПОДСЧЕТ ШТРАФОВ НУЛЕЙ
+	// ГЏГЋГ„Г‘Г—Г…Г’ ГГ’ГђГЂГ”ГЋГ‚ ГЌГ“Г‹Г…Г‰
 
 			int mark = -1, temp_mark;
 			int zero_i = 0, zero_j = 0;
@@ -856,9 +856,9 @@ int Graph<T>::Commute_problem() {
 
 			temp_COM_adjMatrix[zero_i][zero_j] = -1;
 
-			// СОЗДАНИЕ ДВУХ МАТРИЦ И ПОДСЧЕТ ИХ ОПТИМИСТИЧЕСКОЙ ДЛИНЫ
+			// Г‘ГЋГ‡Г„ГЂГЌГ€Г… Г„Г‚Г“Г• ГЊГЂГ’ГђГ€Г– Г€ ГЏГЋГ„Г‘Г—Г…Г’ Г€Г• ГЋГЏГ’Г€ГЊГ€Г‘Г’Г€Г—Г…Г‘ГЉГЋГ‰ Г„Г‹Г€ГЌГ›
 
-			// МАТРИЦА, ВКЛЮЧАЮЩАЯ X
+			// ГЊГЂГ’ГђГ€Г–ГЂ, Г‚ГЉГ‹ГћГ—ГЂГћГ™ГЂГџ X
 			for (int i = 0; i < SIZE; ++i) {
 				for (int j = 0; j < SIZE; ++j) {
 					if (i == zero_i || j == zero_j) temp1_COM_adjMatrix[i][j] = -1;
@@ -870,7 +870,7 @@ int Graph<T>::Commute_problem() {
 
 			int MINROAD_1 = cur_road + COM_rows_columns(temp1_COM_adjMatrix);
 
-			// МАТРИЦА, НЕ ВКЛЮЧАЮЩАЯ X
+			// ГЊГЂГ’ГђГ€Г–ГЂ, ГЌГ… Г‚ГЉГ‹ГћГ—ГЂГћГ™ГЂГџ X
 			for (int i = 0; i < SIZE; ++i) {
 				for (int j = 0; j < SIZE; ++j) {
 					temp2_COM_adjMatrix[i][j] = temp_COM_adjMatrix[i][j];
@@ -880,7 +880,7 @@ int Graph<T>::Commute_problem() {
 
 			int MINROAD_2 = cur_road + COM_rows_columns(temp2_COM_adjMatrix);
 
-			// СРАВНЕНИЕ ПОЛУЧЕННЫХ ЗНАЧЕНИЙ ДЛИН
+			// Г‘ГђГЂГ‚ГЌГ…ГЌГ€Г… ГЏГЋГ‹Г“Г—Г…ГЌГЌГ›Г• Г‡ГЌГЂГ—Г…ГЌГ€Г‰ Г„Г‹Г€ГЌ
 
 			if (MINROAD_1 <= MINROAD_2) {
 				if (m + 1 == SIZE) temp1_COM_adjMatrix[zero_i][zero_j] = 0;
@@ -923,9 +923,9 @@ int Graph<T>::Commute_problem() {
 	}
 	
 
-	cout << "\nОтвет: \n";
+	cout << "\nГЋГІГўГҐГІ: \n";
 
-	cout << "Длина пути: " << cur_road << endl;
+	cout << "Г„Г«ГЁГ­Г  ГЇГіГІГЁ: " << cur_road << endl;
 	int x = 1;
 	cout << x;
 	for (int i = 1; i <= SIZE; ++i) {
