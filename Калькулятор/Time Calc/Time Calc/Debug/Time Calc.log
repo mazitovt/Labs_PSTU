@@ -1,0 +1,8 @@
+﻿  MyForm.cpp
+E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Time Calc\MyForm.h(1166,36): warning C4101: e: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Time Calc\MyForm.h(1173,36): warning C4101: e: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Time Calc\MyForm.h(1180,36): warning C4101: e: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Time Calc\MyForm.cpp(12,32): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Time Calc\clsTime.h(85): warning C4172: возвращение адреса локальной или временной переменной
+  clsTime.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Time Calc.vcxproj -> E:\Documents\Visual Studio Projects\C++ projects\LR 33\Time Calc\Debug\Time Calc.exe

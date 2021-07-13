@@ -1,0 +1,75 @@
+﻿  ConsoleApplication1.cpp
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(241,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(242,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(248,30): warning C4244: аргумент: преобразование "float" в "GLubyte", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(248,27): warning C4244: аргумент: преобразование "float" в "GLubyte", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(248,24): warning C4244: аргумент: преобразование "float" в "GLubyte", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(277,61): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(277,54): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(277,49): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(277,35): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(296,63): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(296,59): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(296,55): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(307,77): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(307,73): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(307,69): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(309,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(310,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(314,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(315,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(319,17): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(319,13): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(337,18): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(337,14): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(338,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(338,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(339,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(339,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(342,18): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(342,14): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(343,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(343,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(344,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(344,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(351,18): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(351,14): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(352,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(352,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(353,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(353,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(360,18): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(360,14): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(361,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(361,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(362,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(362,19): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(400,66): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(401,66): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(422,25): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(422,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(461,102): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(461,98): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(461,94): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(52,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,23): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(102,43): warning C4101: sourceVertex: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(102,57): warning C4101: targetVertex: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(102,71): warning C4101: edgeWeight: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(134,43): warning C4101: sourceVertex: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(134,57): warning C4101: targetVertex: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(134,71): warning C4101: edgeWeight: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(237,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(244,39): warning C4305: аргумент: усечение из "double" в "GLclampf"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(429,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(427): message : во время компиляции функции-члена класс шаблон "void Graph<int>::DrawGraph(void)"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(70): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Graph<int>::DrawGraph(void)"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(17): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Graph<int>"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(754,28): warning C4101: zero_mark: неиспользованная локальная переменная
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(753): message : во время компиляции функции-члена класс шаблон "int Graph<int>::zero_mark(int,int)"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(846): message : выполняется компиляция ссылки на экземпляр шаблон функции "int Graph<int>::zero_mark(int,int)"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(670,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(666): message : во время компиляции функции-члена класс шаблон "void Graph<int>::temp_COM_Print(void)"
+E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\ConsoleApplication1\Graph.h(821): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Graph<int>::temp_COM_Print(void)"
+  ConsoleApplication1.vcxproj -> E:\Documents\Visual Studio Projects\C++ projects\Test2\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
