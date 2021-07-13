@@ -1,0 +1,17 @@
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10.exe
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.exe
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.deps.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.runtimeconfig.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.runtimeconfig.dev.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.dll
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10_2.pdb
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10.dll
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\bin\Debug\netcoreapp3.1\LR10.pdb
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.csprojAssemblyReference.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.AssemblyInfoInputs.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.AssemblyInfo.cs
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.csproj.CoreCompileInputs.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.csproj.CopyComplete
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.dll
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.pdb
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR10\LR10\LR10_2\obj\Debug\netcoreapp3.1\LR10_2.genruntimeconfig.cache

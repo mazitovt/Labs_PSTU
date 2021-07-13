@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="LR12_2.MyCollection&lt;T&gt;">
+    <Position X="4" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAACAAgBEECAAARAQAAAAIAAQEAAAAAAACAJA=</HashCode>
+      <FileName>MyCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LR12_2.MyEnumerator&lt;T&gt;">
+    <Position X="0.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAgAACAAAAAgAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>MyEnumerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LR12_2.TDoublePoint&lt;T&gt;">
+    <Position X="0.75" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>TDoublePoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

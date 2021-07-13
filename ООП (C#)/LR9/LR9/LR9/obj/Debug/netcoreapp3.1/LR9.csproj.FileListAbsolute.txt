@@ -1,0 +1,13 @@
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.csprojAssemblyReference.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.AssemblyInfoInputs.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.AssemblyInfo.cs
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.csproj.CoreCompileInputs.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.exe
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.deps.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.runtimeconfig.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.runtimeconfig.dev.json
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.dll
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\bin\Debug\netcoreapp3.1\LR9.pdb
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.dll
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.pdb
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\3 семестр\ООП. Викентьева\ЛР\LR9\LR9\LR9\obj\Debug\netcoreapp3.1\LR9.genruntimeconfig.cache

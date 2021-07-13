@@ -1,0 +1,690 @@
+namespace ArraysApp
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором форм Windows
+
+        /// <summary>
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox_Function = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel_Function = new System.Windows.Forms.TableLayoutPanel();
+            this.button_FunctionButton = new System.Windows.Forms.Button();
+            this.label_Function = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_Header = new System.Windows.Forms.TableLayoutPanel();
+            this.label_Header = new System.Windows.Forms.Label();
+            this.panel_UnderHeader = new System.Windows.Forms.Panel();
+            this.label_UnderHeaderStatus = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_File = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox_OpenFromFile = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel_OpenFromFile = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox_OpenFromFile = new System.Windows.Forms.ComboBox();
+            this.button_OpenFromFile = new System.Windows.Forms.Button();
+            this.groupBox_SaveToFile = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel_SaveToFile = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox_FileName = new System.Windows.Forms.TextBox();
+            this.button_SaveToFile = new System.Windows.Forms.Button();
+            this.groupBox_Make = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel_Make = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton_Manual = new System.Windows.Forms.RadioButton();
+            this.radioButton_Random = new System.Windows.Forms.RadioButton();
+            this.button_MakeArray = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel_Rows = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Columns = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabPage1.SuspendLayout();
+            this.tableLayoutPanelMain.SuspendLayout();
+            this.groupBox_Function.SuspendLayout();
+            this.tableLayoutPanel_Function.SuspendLayout();
+            this.tableLayoutPanel_Header.SuspendLayout();
+            this.tableLayoutPanel_File.SuspendLayout();
+            this.groupBox_OpenFromFile.SuspendLayout();
+            this.tableLayoutPanel_OpenFromFile.SuspendLayout();
+            this.groupBox_SaveToFile.SuspendLayout();
+            this.tableLayoutPanel_SaveToFile.SuspendLayout();
+            this.groupBox_Make.SuspendLayout();
+            this.tableLayoutPanel_Make.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.LightGray;
+            this.tabPage1.Controls.Add(this.tableLayoutPanelMain);
+            this.tabPage1.Location = new System.Drawing.Point(64, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(423, 689);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tableLayoutPanelMain
+            // 
+            this.tableLayoutPanelMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tableLayoutPanelMain.ColumnCount = 1;
+            this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelMain.Controls.Add(this.groupBox_Function, 0, 3);
+            this.tableLayoutPanelMain.Controls.Add(this.tableLayoutPanel_Header, 0, 0);
+            this.tableLayoutPanelMain.Controls.Add(this.tableLayoutPanel_File, 0, 1);
+            this.tableLayoutPanelMain.Controls.Add(this.groupBox_Make, 0, 2);
+            this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
+            this.tableLayoutPanelMain.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanelMain.RowCount = 4;
+            this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelMain.Size = new System.Drawing.Size(423, 689);
+            this.tableLayoutPanelMain.TabIndex = 15;
+            this.tableLayoutPanelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelMain_Paint);
+            // 
+            // groupBox_Function
+            // 
+            this.groupBox_Function.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox_Function.Controls.Add(this.tableLayoutPanel_Function);
+            this.groupBox_Function.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_Function.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Function.Location = new System.Drawing.Point(5, 512);
+            this.groupBox_Function.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox_Function.Name = "groupBox_Function";
+            this.groupBox_Function.Size = new System.Drawing.Size(413, 172);
+            this.groupBox_Function.TabIndex = 53;
+            this.groupBox_Function.TabStop = false;
+            this.groupBox_Function.Text = "Операция над массивом";
+            // 
+            // tableLayoutPanel_Function
+            // 
+            this.tableLayoutPanel_Function.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel_Function.ColumnCount = 1;
+            this.tableLayoutPanel_Function.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.5F));
+            this.tableLayoutPanel_Function.Controls.Add(this.button_FunctionButton, 0, 2);
+            this.tableLayoutPanel_Function.Controls.Add(this.label_Function, 0, 0);
+            this.tableLayoutPanel_Function.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Function.Location = new System.Drawing.Point(3, 26);
+            this.tableLayoutPanel_Function.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_Function.Name = "tableLayoutPanel_Function";
+            this.tableLayoutPanel_Function.Padding = new System.Windows.Forms.Padding(3);
+            this.tableLayoutPanel_Function.RowCount = 3;
+            this.tableLayoutPanel_Function.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.61538F));
+            this.tableLayoutPanel_Function.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.38462F));
+            this.tableLayoutPanel_Function.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel_Function.Size = new System.Drawing.Size(407, 143);
+            this.tableLayoutPanel_Function.TabIndex = 14;
+            // 
+            // button_FunctionButton
+            // 
+            this.button_FunctionButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button_FunctionButton.Location = new System.Drawing.Point(270, 107);
+            this.button_FunctionButton.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
+            this.button_FunctionButton.Name = "button_FunctionButton";
+            this.button_FunctionButton.Size = new System.Drawing.Size(114, 30);
+            this.button_FunctionButton.TabIndex = 0;
+            this.button_FunctionButton.Text = "button_Func";
+            this.button_FunctionButton.UseVisualStyleBackColor = true;
+            // 
+            // label_Function
+            // 
+            this.label_Function.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_Function.AutoSize = true;
+            this.label_Function.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Function.Location = new System.Drawing.Point(6, 20);
+            this.label_Function.Name = "label_Function";
+            this.label_Function.Size = new System.Drawing.Size(63, 28);
+            this.label_Function.TabIndex = 1;
+            this.label_Function.Text = "label1";
+            // 
+            // tableLayoutPanel_Header
+            // 
+            this.tableLayoutPanel_Header.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel_Header.ColumnCount = 1;
+            this.tableLayoutPanel_Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Header.Controls.Add(this.label_Header, 0, 0);
+            this.tableLayoutPanel_Header.Controls.Add(this.panel_UnderHeader, 0, 1);
+            this.tableLayoutPanel_Header.Controls.Add(this.label_UnderHeaderStatus, 0, 2);
+            this.tableLayoutPanel_Header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Header.Location = new System.Drawing.Point(5, 5);
+            this.tableLayoutPanel_Header.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_Header.Name = "tableLayoutPanel_Header";
+            this.tableLayoutPanel_Header.Padding = new System.Windows.Forms.Padding(3);
+            this.tableLayoutPanel_Header.RowCount = 3;
+            this.tableLayoutPanel_Header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel_Header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel_Header.Size = new System.Drawing.Size(413, 101);
+            this.tableLayoutPanel_Header.TabIndex = 8;
+            // 
+            // label_Header
+            // 
+            this.label_Header.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_Header.AutoSize = true;
+            this.label_Header.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Header.Location = new System.Drawing.Point(6, 15);
+            this.label_Header.Name = "label_Header";
+            this.label_Header.Size = new System.Drawing.Size(145, 35);
+            this.label_Header.TabIndex = 6;
+            this.label_Header.Text = "array_name";
+            this.label_Header.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_Header.UseMnemonic = false;
+            // 
+            // panel_UnderHeader
+            // 
+            this.panel_UnderHeader.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel_UnderHeader.BackColor = System.Drawing.Color.DarkGray;
+            this.panel_UnderHeader.Location = new System.Drawing.Point(16, 58);
+            this.panel_UnderHeader.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_UnderHeader.Name = "panel_UnderHeader";
+            this.panel_UnderHeader.Size = new System.Drawing.Size(381, 7);
+            this.panel_UnderHeader.TabIndex = 7;
+            // 
+            // label_UnderHeaderStatus
+            // 
+            this.label_UnderHeaderStatus.AutoSize = true;
+            this.label_UnderHeaderStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_UnderHeaderStatus.Location = new System.Drawing.Point(6, 73);
+            this.label_UnderHeaderStatus.Name = "label_UnderHeaderStatus";
+            this.label_UnderHeaderStatus.Size = new System.Drawing.Size(161, 23);
+            this.label_UnderHeaderStatus.TabIndex = 0;
+            this.label_UnderHeaderStatus.Text = "Статус: array_status";
+            // 
+            // tableLayoutPanel_File
+            // 
+            this.tableLayoutPanel_File.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tableLayoutPanel_File.ColumnCount = 1;
+            this.tableLayoutPanel_File.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_File.Controls.Add(this.groupBox_OpenFromFile, 0, 1);
+            this.tableLayoutPanel_File.Controls.Add(this.groupBox_SaveToFile, 0, 0);
+            this.tableLayoutPanel_File.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_File.Location = new System.Drawing.Point(5, 106);
+            this.tableLayoutPanel_File.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_File.Name = "tableLayoutPanel_File";
+            this.tableLayoutPanel_File.RowCount = 2;
+            this.tableLayoutPanel_File.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_File.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_File.Size = new System.Drawing.Size(413, 203);
+            this.tableLayoutPanel_File.TabIndex = 0;
+            // 
+            // groupBox_OpenFromFile
+            // 
+            this.groupBox_OpenFromFile.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox_OpenFromFile.Controls.Add(this.tableLayoutPanel_OpenFromFile);
+            this.groupBox_OpenFromFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_OpenFromFile.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_OpenFromFile.Location = new System.Drawing.Point(0, 101);
+            this.groupBox_OpenFromFile.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox_OpenFromFile.Name = "groupBox_OpenFromFile";
+            this.groupBox_OpenFromFile.Size = new System.Drawing.Size(413, 102);
+            this.groupBox_OpenFromFile.TabIndex = 53;
+            this.groupBox_OpenFromFile.TabStop = false;
+            this.groupBox_OpenFromFile.Text = "Открыть из файла";
+            // 
+            // tableLayoutPanel_OpenFromFile
+            // 
+            this.tableLayoutPanel_OpenFromFile.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel_OpenFromFile.ColumnCount = 2;
+            this.tableLayoutPanel_OpenFromFile.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_OpenFromFile.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_OpenFromFile.Controls.Add(this.comboBox_OpenFromFile, 0, 0);
+            this.tableLayoutPanel_OpenFromFile.Controls.Add(this.button_OpenFromFile, 1, 0);
+            this.tableLayoutPanel_OpenFromFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_OpenFromFile.Location = new System.Drawing.Point(3, 26);
+            this.tableLayoutPanel_OpenFromFile.Name = "tableLayoutPanel_OpenFromFile";
+            this.tableLayoutPanel_OpenFromFile.RowCount = 1;
+            this.tableLayoutPanel_OpenFromFile.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_OpenFromFile.Size = new System.Drawing.Size(407, 73);
+            this.tableLayoutPanel_OpenFromFile.TabIndex = 0;
+            // 
+            // comboBox_OpenFromFile
+            // 
+            this.comboBox_OpenFromFile.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox_OpenFromFile.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_OpenFromFile.FormattingEnabled = true;
+            this.comboBox_OpenFromFile.Location = new System.Drawing.Point(3, 18);
+            this.comboBox_OpenFromFile.Name = "comboBox_OpenFromFile";
+            this.comboBox_OpenFromFile.Size = new System.Drawing.Size(189, 36);
+            this.comboBox_OpenFromFile.TabIndex = 10;
+            this.comboBox_OpenFromFile.SelectedIndexChanged += new System.EventHandler(this.comboBox_OpenFromFile_SelectedIndexChanged);
+            // 
+            // button_OpenFromFile
+            // 
+            this.button_OpenFromFile.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button_OpenFromFile.Location = new System.Drawing.Point(206, 3);
+            this.button_OpenFromFile.Name = "button_OpenFromFile";
+            this.button_OpenFromFile.Size = new System.Drawing.Size(188, 67);
+            this.button_OpenFromFile.TabIndex = 8;
+            this.button_OpenFromFile.Text = "Открыть";
+            this.button_OpenFromFile.UseVisualStyleBackColor = true;
+            this.button_OpenFromFile.Click += new System.EventHandler(this.button_OpenFromFile_Click);
+            // 
+            // groupBox_SaveToFile
+            // 
+            this.groupBox_SaveToFile.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox_SaveToFile.Controls.Add(this.tableLayoutPanel_SaveToFile);
+            this.groupBox_SaveToFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_SaveToFile.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_SaveToFile.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_SaveToFile.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox_SaveToFile.Name = "groupBox_SaveToFile";
+            this.groupBox_SaveToFile.Size = new System.Drawing.Size(413, 101);
+            this.groupBox_SaveToFile.TabIndex = 54;
+            this.groupBox_SaveToFile.TabStop = false;
+            this.groupBox_SaveToFile.Text = "Сохранить в файл";
+            // 
+            // tableLayoutPanel_SaveToFile
+            // 
+            this.tableLayoutPanel_SaveToFile.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel_SaveToFile.ColumnCount = 2;
+            this.tableLayoutPanel_SaveToFile.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.87013F));
+            this.tableLayoutPanel_SaveToFile.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.12987F));
+            this.tableLayoutPanel_SaveToFile.Controls.Add(this.textBox_FileName, 0, 0);
+            this.tableLayoutPanel_SaveToFile.Controls.Add(this.button_SaveToFile, 1, 0);
+            this.tableLayoutPanel_SaveToFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_SaveToFile.Location = new System.Drawing.Point(3, 26);
+            this.tableLayoutPanel_SaveToFile.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_SaveToFile.Name = "tableLayoutPanel_SaveToFile";
+            this.tableLayoutPanel_SaveToFile.Padding = new System.Windows.Forms.Padding(3);
+            this.tableLayoutPanel_SaveToFile.RowCount = 1;
+            this.tableLayoutPanel_SaveToFile.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_SaveToFile.Size = new System.Drawing.Size(407, 72);
+            this.tableLayoutPanel_SaveToFile.TabIndex = 13;
+            // 
+            // textBox_FileName
+            // 
+            this.textBox_FileName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox_FileName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_FileName.Location = new System.Drawing.Point(6, 19);
+            this.textBox_FileName.Name = "textBox_FileName";
+            this.textBox_FileName.Size = new System.Drawing.Size(185, 34);
+            this.textBox_FileName.TabIndex = 14;
+            // 
+            // button_SaveToFile
+            // 
+            this.button_SaveToFile.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button_SaveToFile.Location = new System.Drawing.Point(205, 6);
+            this.button_SaveToFile.Name = "button_SaveToFile";
+            this.button_SaveToFile.Padding = new System.Windows.Forms.Padding(3);
+            this.button_SaveToFile.Size = new System.Drawing.Size(190, 60);
+            this.button_SaveToFile.TabIndex = 13;
+            this.button_SaveToFile.Text = "Сохранить";
+            this.button_SaveToFile.UseVisualStyleBackColor = true;
+            this.button_SaveToFile.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // groupBox_Make
+            // 
+            this.groupBox_Make.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox_Make.Controls.Add(this.tableLayoutPanel_Make);
+            this.groupBox_Make.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_Make.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Make.Location = new System.Drawing.Point(5, 309);
+            this.groupBox_Make.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox_Make.Name = "groupBox_Make";
+            this.groupBox_Make.Size = new System.Drawing.Size(413, 203);
+            this.groupBox_Make.TabIndex = 55;
+            this.groupBox_Make.TabStop = false;
+            this.groupBox_Make.Text = "Создание";
+            // 
+            // tableLayoutPanel_Make
+            // 
+            this.tableLayoutPanel_Make.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel_Make.ColumnCount = 2;
+            this.tableLayoutPanel_Make.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.63366F));
+            this.tableLayoutPanel_Make.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.36634F));
+            this.tableLayoutPanel_Make.Controls.Add(this.radioButton_Manual, 0, 1);
+            this.tableLayoutPanel_Make.Controls.Add(this.radioButton_Random, 0, 0);
+            this.tableLayoutPanel_Make.Controls.Add(this.button_MakeArray, 0, 2);
+            this.tableLayoutPanel_Make.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Make.Location = new System.Drawing.Point(3, 26);
+            this.tableLayoutPanel_Make.Name = "tableLayoutPanel_Make";
+            this.tableLayoutPanel_Make.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.tableLayoutPanel_Make.RowCount = 3;
+            this.tableLayoutPanel_Make.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel_Make.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.45977F));
+            this.tableLayoutPanel_Make.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.88506F));
+            this.tableLayoutPanel_Make.Size = new System.Drawing.Size(407, 174);
+            this.tableLayoutPanel_Make.TabIndex = 0;
+            // 
+            // radioButton_Manual
+            // 
+            this.radioButton_Manual.AutoSize = true;
+            this.radioButton_Manual.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioButton_Manual.Location = new System.Drawing.Point(6, 72);
+            this.radioButton_Manual.Name = "radioButton_Manual";
+            this.radioButton_Manual.Size = new System.Drawing.Size(103, 46);
+            this.radioButton_Manual.TabIndex = 55;
+            this.radioButton_Manual.TabStop = true;
+            this.radioButton_Manual.Text = "Вручную";
+            this.radioButton_Manual.UseVisualStyleBackColor = true;
+            this.radioButton_Manual.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton_Random
+            // 
+            this.radioButton_Random.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.radioButton_Random.AutoSize = true;
+            this.radioButton_Random.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioButton_Random.Location = new System.Drawing.Point(6, 21);
+            this.radioButton_Random.Name = "radioButton_Random";
+            this.radioButton_Random.Size = new System.Drawing.Size(66, 27);
+            this.radioButton_Random.TabIndex = 54;
+            this.radioButton_Random.TabStop = true;
+            this.radioButton_Random.Text = "ДСЧ";
+            this.radioButton_Random.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radioButton_Random.UseVisualStyleBackColor = true;
+            this.radioButton_Random.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // button_MakeArray
+            // 
+            this.button_MakeArray.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_MakeArray.Location = new System.Drawing.Point(6, 124);
+            this.button_MakeArray.Name = "button_MakeArray";
+            this.button_MakeArray.Size = new System.Drawing.Size(141, 47);
+            this.button_MakeArray.TabIndex = 56;
+            this.button_MakeArray.Text = "button_make";
+            this.button_MakeArray.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.HotTrack = true;
+            this.tabControl1.ItemSize = new System.Drawing.Size(60, 60);
+            this.tabControl1.Location = new System.Drawing.Point(9, 11);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(0, 0);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(491, 697);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 44;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.Silver;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 56);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 50;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView1.Size = new System.Drawing.Size(450, 512);
+            this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "[1]";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "[2]";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "[3]";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "[4]";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "[5]";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "[6]";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "[7]";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "[8]";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "[9]";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // tableLayoutPanel_Rows
+            // 
+            this.tableLayoutPanel_Rows.BackColor = System.Drawing.Color.Silver;
+            this.tableLayoutPanel_Rows.ColumnCount = 1;
+            this.tableLayoutPanel_Rows.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Rows.Location = new System.Drawing.Point(0, 56);
+            this.tableLayoutPanel_Rows.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_Rows.Name = "tableLayoutPanel_Rows";
+            this.tableLayoutPanel_Rows.RowCount = 9;
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Rows.Size = new System.Drawing.Size(50, 512);
+            this.tableLayoutPanel_Rows.TabIndex = 50;
+            this.tableLayoutPanel_Rows.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel_Rows_Paint);
+            // 
+            // tableLayoutPanel_Columns
+            // 
+            this.tableLayoutPanel_Columns.BackColor = System.Drawing.Color.Silver;
+            this.tableLayoutPanel_Columns.ColumnCount = 9;
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel_Columns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Columns.Location = new System.Drawing.Point(50, 0);
+            this.tableLayoutPanel_Columns.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel_Columns.Name = "tableLayoutPanel_Columns";
+            this.tableLayoutPanel_Columns.RowCount = 1;
+            this.tableLayoutPanel_Columns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Columns.Size = new System.Drawing.Size(450, 56);
+            this.tableLayoutPanel_Columns.TabIndex = 51;
+            this.tableLayoutPanel_Columns.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel_Columns_Paint);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Silver;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel_Columns, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel_Rows, 0, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(500, 11);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(500, 568);
+            this.tableLayoutPanel3.TabIndex = 52;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(1151, 759);
+            this.Controls.Add(this.tableLayoutPanel3);
+            this.Controls.Add(this.tabControl1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanelMain.ResumeLayout(false);
+            this.groupBox_Function.ResumeLayout(false);
+            this.tableLayoutPanel_Function.ResumeLayout(false);
+            this.tableLayoutPanel_Function.PerformLayout();
+            this.tableLayoutPanel_Header.ResumeLayout(false);
+            this.tableLayoutPanel_Header.PerformLayout();
+            this.tableLayoutPanel_File.ResumeLayout(false);
+            this.groupBox_OpenFromFile.ResumeLayout(false);
+            this.tableLayoutPanel_OpenFromFile.ResumeLayout(false);
+            this.groupBox_SaveToFile.ResumeLayout(false);
+            this.tableLayoutPanel_SaveToFile.ResumeLayout(false);
+            this.tableLayoutPanel_SaveToFile.PerformLayout();
+            this.groupBox_Make.ResumeLayout(false);
+            this.tableLayoutPanel_Make.ResumeLayout(false);
+            this.tableLayoutPanel_Make.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label label_UnderHeaderStatus;
+        private System.Windows.Forms.Panel panel_UnderHeader;
+        private System.Windows.Forms.Label label_Header;
+        private System.Windows.Forms.ComboBox comboBox_OpenFromFile;
+        private System.Windows.Forms.Button button_OpenFromFile;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Rows;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Columns;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.Button button_SaveToFile;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Header;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_SaveToFile;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Function;
+        private System.Windows.Forms.GroupBox groupBox_Make;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Make;
+        private System.Windows.Forms.RadioButton radioButton_Manual;
+        private System.Windows.Forms.RadioButton radioButton_Random;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_File;
+        private System.Windows.Forms.GroupBox groupBox_OpenFromFile;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_OpenFromFile;
+        private System.Windows.Forms.GroupBox groupBox_SaveToFile;
+        private System.Windows.Forms.TextBox textBox_FileName;
+        private System.Windows.Forms.Button button_MakeArray;
+        private System.Windows.Forms.Button button_FunctionButton;
+        private System.Windows.Forms.Label label_Function;
+        private System.Windows.Forms.GroupBox groupBox_Function;
+    }
+}
+

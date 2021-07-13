@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WindowsForms/1.0.0": {
+        "dependencies": {
+          "LR_Threads": "1.0.0"
+        },
+        "runtime": {
+          "WindowsForms.dll": {}
+        }
+      },
+      "LR_Threads/1.0.0": {
+        "runtime": {
+          "LR_Threads.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WindowsForms/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LR_Threads/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

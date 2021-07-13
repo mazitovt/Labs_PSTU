@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ExecutablesLibrary">
+      <HintPath>..\..\..\ExecutablesLibrary\ExecutablesLibrary\ExecutablesLibrary\bin\Debug\netstandard2.1\ExecutablesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="LR12_2">
+      <HintPath>..\..\..\LR12\LR12\LR12_2\bin\Debug\netcoreapp3.1\LR12_2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
