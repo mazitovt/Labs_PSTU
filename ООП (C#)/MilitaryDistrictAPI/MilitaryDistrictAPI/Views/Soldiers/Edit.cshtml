@@ -1,0 +1,94 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Soldier
+
+@{
+    Layout = "_LayoutCRUD";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Изменить</h1>
+
+<h4>Военнослужащий</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SoldierId" />
+            <div class="form-group">
+                <label asp-for="ServingUnitId" class="control-label"></label>
+                <select asp-for="ServingUnitId" class="form-control" asp-items="ViewBag.ServingUnitId"></select>
+                <span asp-validation-for="ServingUnitId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServingSubunitId" class="control-label"></label>
+                <select asp-for="ServingSubunitId" class="form-control" asp-items="ViewBag.ServingSubunitId">
+                    <option></option>
+                </select>
+                <span asp-validation-for="ServingSubunitId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilitaryRankId" class="control-label"></label>
+                <select asp-for="MilitaryRankId" class="form-control" asp-items="ViewBag.MilitaryRankId"></select>
+                <span asp-validation-for="MilitaryRankId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RankInfoId" class="control-label"></label>
+                <select asp-for="RankInfoId" class="form-control" asp-items="ViewBag.RankInfoId"></select>
+                <span asp-validation-for="RankInfoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaderId" class="control-label"></label>
+                <select asp-for="LeaderId" class="form-control" asp-items="ViewBag.LeaderId">
+                    <option></option>
+                </select>
+                <span asp-validation-for="LeaderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                            <label asp-for="Occupations" class="control-label"></label>
+                            <select id="occupations" multiple="multiple" asp-for="Occupations">
+                                @if (ViewBag.Occupations is MultiSelectList list)
+                                {
+                                    @foreach (var item in list)
+                                    {
+                                        if (item.Selected)
+                                        {
+                                            <option value="@item.Value" selected>@item.Text</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@item.Value">@item.Text</option>
+                                        }
+                                    }
+                                }
+                                
+                            </select>
+                        </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Назад</a>
+</div>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#occupations').multiselect(
+                {
+                    buttonWidth: '400px',
+                    includeSelectAllOption: true
+                });
+        });
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

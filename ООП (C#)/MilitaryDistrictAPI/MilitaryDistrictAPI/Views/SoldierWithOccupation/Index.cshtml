@@ -1,0 +1,66 @@
+@model IEnumerable<MilitaryDistrictAPI.Models.scaffolded.Soldier>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutCRUD.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leader)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilitaryRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RankInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServingSubunit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServingUnit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leader.SoldierId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilitaryRank.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RankInfo.RecordId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServingSubunit.SubunitId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServingUnit.UnitNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SoldierId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SoldierId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SoldierId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

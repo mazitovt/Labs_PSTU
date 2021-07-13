@@ -1,0 +1,21 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Vehicle
+
+@{
+    ViewData["Title"] = "Техника";
+    Layout = "~/Views/Shared/CRUD/_LayoutCreate.cshtml";
+}
+
+<div class="form-group">
+    <label asp-for="VehicleCategoryId" class="control-label"></label>
+    <select asp-for="VehicleCategoryId" class ="form-control" asp-items="ViewBag.VehicleCategoryId"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" placeholder="*"/>
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Amount" class="control-label"></label>
+    <input asp-for="Amount" class="form-control" placeholder="*"/>
+    <span asp-validation-for="Amount" class="text-danger"></span>
+</div>

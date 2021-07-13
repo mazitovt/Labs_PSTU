@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCRUD.cshtml";
+}
+<div class="d-flex">
+    <div class="p-2">
+        <h1>@ViewData["Title"]</h1></div>
+    <div class="ml-auto p-2"><a asp-action="Create" type="button" class="btn btn-primary btn-lg">Создать</a></div>
+</div>
+
+<div>
+    @RenderBody()
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

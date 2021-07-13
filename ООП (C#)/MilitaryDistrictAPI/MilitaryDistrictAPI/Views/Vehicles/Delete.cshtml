@@ -1,0 +1,26 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Vehicle
+
+@{
+    ViewData["Title"] = "Техника";
+    ViewData["asp-for"] = "VehicleId";
+    Layout = "~/Views/Shared/CRUD/_LayoutDelete.cshtml";
+}
+
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Name)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Name)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Amount)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Amount)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.VehicleCategory)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.VehicleCategory.Name)
+</dd>

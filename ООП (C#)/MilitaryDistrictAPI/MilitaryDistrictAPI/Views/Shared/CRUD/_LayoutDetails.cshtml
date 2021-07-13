@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCRUD.cshtml";
+}
+
+<h1>Подробнее</h1>
+
+<div>
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+    <dl class="row">
+        @RenderBody()
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@ViewData["asp-route-id"]">Изменить</a> |
+    <a asp-action="Index">Назад</a>
+</div>

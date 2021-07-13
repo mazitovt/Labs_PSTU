@@ -1,0 +1,22 @@
+@model MilitaryDistrictAPI.Models.scaffolded.SoldierOccupation
+
+@{
+    ViewData["Title"] = "Специальность военнослужащего";
+    ViewData["asp-for_1"] = "SoldierId";
+    ViewData["asp-for_2"] = "OccupationId";
+    Layout = "CRUD/_LayoutDelete";
+}
+
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Occupation)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Occupation.Name)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Soldier)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Soldier.SoldierId)
+</dd>
+  

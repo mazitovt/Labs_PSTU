@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\scaffolded2\**" />
+    <Content Remove="Controllers\scaffolded2\**" />
+    <EmbeddedResource Remove="Controllers\scaffolded2\**" />
+    <None Remove="Controllers\scaffolded2\**" />
+    <Compile Remove="Views\SoldOccup\**" />
+    <EmbeddedResource Remove="Views\SoldOccup\**" />
+    <None Remove="Views\SoldOccup\**" />
+    <Content Remove="Views\SoldOccup\**" />
+    <Compile Remove="Views\SoldierWithOccupation\**" />
+    <EmbeddedResource Remove="Views\SoldierWithOccupation\**" />
+    <None Remove="Views\SoldierWithOccupation\**" />
+    <Content Remove="Views\SoldierWithOccupation\**" />
+    <Compile Remove="Controllers\soldOccup\**" />
+    <EmbeddedResource Remove="Controllers\soldOccup\**" />
+    <None Remove="Controllers\soldOccup\**" />
+    <Content Remove="Controllers\soldOccup\**" />
+    <Compile Remove="Controllers\TablesController.cs" />
+    <Compile Remove="Views\Tables\**" />
+    <EmbeddedResource Remove="Views\Tables\**" />
+    <None Remove="Views\Tables\**" />
+    <Content Remove="Views\Tables\**" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Models\StoredTable.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\ItemCont\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\ItemCont\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\ItemCont\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\ItemCont\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\ItemCont\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldOccup\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldOccup\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldOccup\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldOccup\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldOccup\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldierWithOccupation\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldierWithOccupation\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldierWithOccupation\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldierWithOccupation\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\SoldierWithOccupation\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Tables\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Tables\IndexOld.cshtml" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,119 @@
+﻿@model MilitaryDistrictAPI.Models.ViewModels.SoldiersFilterView
+
+@{
+    Layout = "~/Views/Shared/CRUD/_LayoutIndex.cshtml";
+    ViewData["Title"] = "Военнослужащие";
+}
+<hr/>
+<form asp-action="FilterSoldiers">
+    <div class="form-row align-items-center">
+        <img src="~/svg/filter.svg" width="30px">
+        <div class="col-3">
+            <label class="sr-only" for="inlineFormInputGroup">Чек1</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Войсковая часть</div>
+                </div>
+                <input asp-for="Filter.UnitName" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="В/Ч 10001">
+            </div>
+        </div>
+        <div class="col-3">
+            <label class="sr-only" for="inlineFormInputGroup">Чек2</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Подразделение</div>
+                </div>
+                <input asp asp-for="Filter.SubUnitId" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="номер">
+                <span asp-validation-for="Filter.SubUnitId" class="badge badge-danger"></span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label class="sr-only" for="inlineFormInputGroup">Чек3</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Командир</div>
+                </div>
+                <input asp-for="Filter.LeaderName" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="Иванов Иван">
+            </div>
+        </div>
+        <div class="col-2">
+            <label class="sr-only" for="inlineFormInputGroup">Чек4</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Звание</div>
+                </div>
+                <input asp-for="Filter.RankName" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="полковник">
+            </div>
+        </div>
+        <div class="form-group" style="padding-top: 15px;">
+            <button type="submit" class="btn btn-outline-info mb-2"><img src="~/svg/caret-down-fill.svg"></button>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().SoldierId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().Leader)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().MilitaryRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().RankInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().ServingSubunit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soldiers.FirstOrDefault().ServingUnit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Soldiers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leader.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilitaryRank.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RankInfo.RecordId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServingSubunit.SubunitId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServingUnit.UnitNumber)
+            </td>
+            <td>
+            <a asp-action="Edit" asp-route-id="@item.SoldierId">
+                <img src="~/svg/pencil-square.svg">
+            </a> |
+            <a asp-action="Details" asp-route-id="@item.SoldierId">
+                <img src="~/svg/info-circle.svg">
+            </a> |
+            <a asp-action="Delete" asp-route-id="@item.SoldierId">
+                <img src="~/svg/trash-fill.svg">
+            </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

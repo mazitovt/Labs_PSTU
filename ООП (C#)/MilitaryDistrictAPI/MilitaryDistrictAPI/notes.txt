@@ -1,0 +1,6 @@
+﻿Scaffold-DbContext "connection-string" MySql.EntityFrameworkCore -OutputDir sakila -f
+
+Scaffold-DbContext "server=localhost;database=military_district_2;uid=root;pwd=1234;" MySql.EntityFrameworkCore -OutputDir scaffolded2 -Tables soldier -f
+
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.relationalqueryableextensions.fromsqlraw?view=efcore-5.0#Microsoft_EntityFrameworkCore_RelationalQueryableExtensions_FromSqlRaw__1_Microsoft_EntityFrameworkCore_DbSet___0__System_String_System_Object___
+SoldierOccupation, UnitLocation - Primary key not found

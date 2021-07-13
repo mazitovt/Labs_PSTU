@@ -1,0 +1,103 @@
+﻿@* @model IEnumerable<MilitaryDistrictAPI.Models.scaffolded.Unit> *@
+@model MilitaryDistrictAPI.Models.ViewModels.FilterUnitView
+@{
+    ViewData["Title"] = "Войсковые части";
+    Layout = "~/Views/Shared/CRUD/_LayoutIndex.cshtml";
+}
+<hr/>
+<table class="table">
+    <form asp-action="FilterUnits">
+        <div class="form-row align-items-center">
+            <img src="~/svg/filter.svg" width="30px">
+            <div class="col-3">
+                <label class="sr-only" for="inlineFormInputGroup">Чек1</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Войсковая часть</div>
+                    </div>
+                    <input asp-for="Filter.UnitTypeName" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="округ">
+                </div>
+            </div>
+            <div class="col-3">
+                <label class="sr-only" for="inlineFormInputGroup">Чек2</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">В составе</div>
+                    </div>
+                    <input asp asp-for="Filter.ParentUnitNumber" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="В/Ч 10001">
+                </div>
+            </div>
+            <div class="col-3">
+                <label class="sr-only" for="inlineFormInputGroup">Чек3</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Командир</div>
+                    </div>
+                    <input asp-for="Filter.LeaderName" type="text" class="form-control text-dark" id="inlineFormInputGroup" placeholder="Иванов Иван">
+                </div>
+            </div>
+            <div class="form-group" style="padding-top: 15px;">
+                <button type="submit" class="btn btn-outline-info mb-2"><img src="~/svg/caret-down-fill.svg"></button>
+            </div>
+        </div>
+    </form>
+
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().UnitId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().UnitNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().Leader)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().ParentUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units.FirstOrDefault().UnitType)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Units) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leader.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentUnit.UnitNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitType.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UnitId">
+                    <img src="~/svg/pencil-square.svg">
+                </a> |
+                <a asp-action="Details" asp-route-id="@item.UnitId">
+                    <img src="~/svg/info-circle.svg">
+                </a> |
+                <a asp-action="Delete" asp-route-id="@item.UnitId">
+                    <img src="~/svg/trash-fill.svg">
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

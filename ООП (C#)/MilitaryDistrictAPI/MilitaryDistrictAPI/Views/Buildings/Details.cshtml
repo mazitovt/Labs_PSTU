@@ -1,0 +1,20 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Building
+
+@{
+    Layout = "CRUD/_LayoutDetails";
+    ViewData["Title"] = "Сооружение";
+    ViewData["asp-route-id"] = Model.BuildingId;
+}
+
+<dt class = "col-3">
+    @Html.DisplayNameFor(model => model.NumberOfLivingSubunits)
+</dt>
+<dd class = "col-9">
+    @Html.DisplayFor(model => model.NumberOfLivingSubunits)
+</dd>
+<dt class = "col-3">
+    @Html.DisplayNameFor(model => model.Unit)
+</dt>
+<dd class = "col-9">
+    @Html.DisplayFor(model => model.Unit.UnitNumber)
+</dd>

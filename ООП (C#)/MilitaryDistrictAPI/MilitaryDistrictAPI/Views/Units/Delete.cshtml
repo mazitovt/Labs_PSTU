@@ -1,0 +1,39 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Unit
+
+@{
+    ViewData["Title"] = "Войсковая часть";
+    ViewData["asp-for"] = "UnitId";
+    Layout = "~/Views/Shared/CRUD/_LayoutDelete.cshtml";
+}
+
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.UnitNumber)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.UnitNumber)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Name)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Name)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.Leader)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.Leader.SoldierId)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.ParentUnit)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.ParentUnit.UnitNumber)
+</dd>
+<dt class = "col-sm-2">
+    @Html.DisplayNameFor(model => model.UnitType)
+</dt>
+<dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.UnitType.Name)
+</dd>
+

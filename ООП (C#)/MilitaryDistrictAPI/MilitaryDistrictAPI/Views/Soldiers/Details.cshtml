@@ -1,0 +1,61 @@
+﻿@model MilitaryDistrictAPI.Models.scaffolded.Soldier
+
+@{
+    Layout = "_LayoutCRUD";
+    ViewData["Title"] = "Details";
+}
+
+<h1>Подробнее</h1>
+
+<div>
+    <h4>Военнослужащий</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Leader)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Leader.SoldierId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilitaryRank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilitaryRank.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RankInfo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RankInfo.RecordId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ServingSubunit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ServingSubunit.SubunitId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ServingUnit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ServingUnit.UnitNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupations)
+        </dt>
+        <dd class="col-sm-10">
+            @string.Join(", ", Model.Occupations.Select(o => o.Name));
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SoldierId">Изменить</a> |
+    <a asp-action="Index">Назад</a>
+</div>

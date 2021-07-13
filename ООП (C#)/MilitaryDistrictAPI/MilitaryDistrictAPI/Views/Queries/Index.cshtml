@@ -1,0 +1,165 @@
+﻿@model IList<StoredRoutine>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-2">
+            <div class="card">
+                <div class="list-group" id="list-tab" role="tablist">
+                    @foreach ((StoredRoutine routine, int i) item in Model.Select((v, i) => (v, i + 1)))
+                    {
+                        <a class="list-group-item list-group-item-action" onclick="Clear()" id="list-@item.i-list" data-toggle="list" href="#list-@item.i" role="tab" aria-controls="@item.i">
+                            Запрос @item.routine.QueryNumber
+                            <br>
+                            @item.routine.ShortDescription
+                        </a>
+                    }
+                    @*<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>*@
+                </div>
+            </div>
+
+        </div>
+        <div class="col-10 p-3 mb-2 bg-light text-dark">
+            <div class="tab-content" id="nav-tabContent">
+                
+                @foreach ((StoredRoutine routine, int i) item in Model.Select((v, i) => (v, i + 1)))
+                {
+                <div class="tab-pane fade" id="list-@item.i" role="tabpanel" aria-labelledby="list-@item.i-list">
+                    @item.routine.Description
+                    <div class="row p-2">
+                        @foreach ((string arg, int i) elem in item.routine.AgrsDescription.Select((v, i) => (v, i + 1)))
+                        {
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="@item.routine.RoutineName+@elem.i" placeholder="@elem.arg">
+                        </div>
+                        }
+                        <div class="col-auto">
+                            <button class="btn btn-primary" onclick="SendRequest('@item.routine.RoutineName', '@item.routine.ComplexResponse' ,@item.routine.NumberOfAgrs)">Выполнить</button>
+                        </div>
+                    </div>
+                    @*<a asp-action="Edit" asp-route-id="@item.i">Edit</a>*@
+
+                </div>
+                }
+                <hr />
+                <table id="tableBlock" class="table table-bordered table-hover">
+                </table>
+
+                @*<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>*@
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+@section scripts{
+
+    <script type="text/javascript">
+
+        function SendRequest(name, complexResponse, number) {
+
+
+            var args = [];
+
+            for (var i = 1; i <= number; i++) {
+                var info = document.getElementById(name + '+' + i.toString()).value;
+                document.getElementById(name + '+' + i.toString()).value = "";
+                args.push(info);
+            }
+
+            var request = {
+                "procedureName": name,
+                "complexResponse": complexResponse,
+                "args": args             
+            };
+
+            console.log(request);
+
+
+            var settings = {
+                "url": "api/APIQueries",
+                "method": "POST",
+                "timeout": 0,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "data": JSON.stringify(request),
+            };
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                Clear();
+                WriteTable(response.table);
+            });
+
+            @*$.ajax({
+                url: 'api/APIQueries',
+                method: 'POST',
+                data: {
+                    "procedureName": name,
+                    "args": args
+                },
+                success: function (data) {
+                    console.log(data);
+                    console.log(data.note);
+                },
+                error: function (x, y, z) {
+                    alert(x + '\n' + y + '\n' + z);
+                }
+            });*@
+
+
+        }
+
+
+
+        function WriteTable(table) {
+
+            var strResult = "<thead><tr>";
+            var fields = [];
+            console.log(table);
+
+            if (table.length != 0) {
+                fields = Object.keys(table[0]);
+            }
+
+            for (var i = 0; i < fields.length; i++) {
+                strResult += "<th>" + fields[i] + "</th>";
+            }
+
+            strResult += "</tr></thead>";
+            strResult += "<tbody>";
+            $.each(table, function (index, row) {
+                strResult += "<tr>"
+                for (var i = 0; i < fields.length; i++) {
+                    strResult += "<td>" + row[fields[i]] + "</td>";
+                }
+                strResult += "</tr>";
+            });
+            strResult += "</tbody>";
+
+            console.log(strResult);
+
+            $("#tableBlock").html(strResult);
+        }
+
+        function Clear() {
+            $("#tableBlock").html("");
+        }
+
+    </script>
+}
