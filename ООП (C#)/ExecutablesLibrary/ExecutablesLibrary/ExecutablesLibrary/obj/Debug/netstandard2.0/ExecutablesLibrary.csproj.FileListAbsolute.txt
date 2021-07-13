@@ -1,0 +1,4 @@
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\4 семестр\ООП\ExecutablesLibrary\ExecutablesLibrary\ExecutablesLibrary\obj\Debug\netstandard2.0\ExecutablesLibrary.csprojAssemblyReference.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\4 семестр\ООП\ExecutablesLibrary\ExecutablesLibrary\ExecutablesLibrary\obj\Debug\netstandard2.0\ExecutablesLibrary.AssemblyInfoInputs.cache
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\4 семестр\ООП\ExecutablesLibrary\ExecutablesLibrary\ExecutablesLibrary\obj\Debug\netstandard2.0\ExecutablesLibrary.AssemblyInfo.cs
+E:\YandexDisk\Tom J\Тимур\Учеба\РИС\2 курс\4 семестр\ООП\ExecutablesLibrary\ExecutablesLibrary\ExecutablesLibrary\obj\Debug\netstandard2.0\ExecutablesLibrary.csproj.CoreCompileInputs.cache
