@@ -1,0 +1,56 @@
+using System;
+
+namespace LR2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Task();
+            //Test();
+        }
+
+        static double Series(double x, int n)
+        {
+            double c0 = (x - 1) / (x + 1);
+            double c1 = Math.Pow(c0, 2 * n + 1);
+            double c2_1 = 2 * n + 1;
+            double c2 = 1 / c2_1;
+            return c1*c2;
+        }
+        static void Task()
+        {
+            int n=0, k = 10;
+            double e = 0.0001, a = 0.2, b = 1, x , step, r_n, SE, SN;
+            step = (b-a) / k;
+
+            Console.WriteLine("{0,6}|{1,25}|{2,25}|{3,25}|", "X", "SN", "SE", "Y");
+
+            for (x = a; x <= b; x += step)
+            {
+                Console.WriteLine(" ".PadLeft(86, '-'));
+                //Console.WriteLine("{0,6}|{1,25}|{2,25}|{3,25}|"," ", " ", " ", " ");
+                
+                x = Math.Round(x, 2);
+                SN = 0;
+                for (n = 0; n <= 10; n++)
+                {
+                    SN += Series(x, n);
+                }
+
+                n = 0;
+                SE = 0;
+                r_n = Series(x, n);
+                while (!(Math.Abs(r_n) < e))
+                {
+                    SE += r_n;
+                    n++;
+                    r_n = Series(x, n);
+                }
+
+                Console.WriteLine("{0,6}|{1,25}|{2,25}|{3,25}|", x, SN, SE, (0.5*Math.Log(x)));                
+            }
+            Console.WriteLine(" ".PadLeft(86, '-'));
+        }
+    }
+}
